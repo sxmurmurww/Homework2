@@ -114,7 +114,6 @@ public class Main {
         int mashaSalary = 67760;
         int denisSalary = 83690;
         int kristinaSalary = 76230;
-
         double indexPercent = 1.1;
 
         double newMashaSalary = mashaSalary * indexPercent;

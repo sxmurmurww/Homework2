@@ -89,7 +89,7 @@ public class Main {
         int weightEgg = 70;
 
         int totalWeightInGrams = bananasCount * weightBanana + milkCount * weightMilk + iceCreamCount * weightIceCream + eggsCount * weightEgg;
-        double totalWeightInKg = totalWeightInGrams / 1000;
+        double totalWeightInKg = totalWeightInGrams / 1000D;
 
         System.out.println("Общий вес в граммах " + totalWeightInGrams + ", в кг" + totalWeightInKg);
     }
@@ -102,7 +102,7 @@ public class Main {
 
         double maxDaysCount = (double) weightForLossInGrams / lossWeightPerDayM;
         double minDaysCount = (double) weightForLossInGrams / lossWeightPerDayX;
-        double lossWeightPerDayMX = lossWeightPerDayX + lossWeightPerDayM;
+        double lossWeightPerDayMX = (lossWeightPerDayX + lossWeightPerDayM) / 2D;
         double averageDaysCount = weightForLossInGrams / lossWeightPerDayMX;
         System.out.println("Минимальное кол-во дней для похудения " + minDaysCount);
         System.out.println("Максимальное кол-во дней для похудения " + maxDaysCount);
